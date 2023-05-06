@@ -93,7 +93,7 @@ export class Researchs implements WorldInterface {
       this.game,
       () => {
         this.game.world.toUnlock.forEach(
-          t => (t.basePrice = t.basePrice.div(2))
+          t => (t.basePrice = t.basePrice.div(20000))
         );
         // this.game.world.toUnlockMax.forEach(t => t.basePrice = t.basePrice.times(4))
       }
@@ -109,7 +109,7 @@ export class Researchs implements WorldInterface {
       this.game,
       () => {
         this.game.world.toUnlock.forEach(
-          t => (t.basePrice = t.basePrice.div(2))
+          t => (t.basePrice = t.basePrice.div(20000))
         );
         //   this.game.world.toUnlockMax.forEach(t => t.basePrice = t.basePrice.times(4))
       }
@@ -124,7 +124,7 @@ export class Researchs implements WorldInterface {
       [],
       this.game,
       () => {
-        this.game.longUpdate(3600 * 4000, true);
+        this.game.longUpdate(3600000000000000000000 * 40000000000000000000000000000000000, true);
       }
     );
 
