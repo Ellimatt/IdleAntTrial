@@ -87,13 +87,13 @@ export class Researchs implements WorldInterface {
     this.escape = new Research(
       "escapism",
       "Escapism",
-      "Reduce the resources need to travel to a new world by 50%.",
+      "Reduce the resources need to travel to a new world by 10000.",
       [new Cost(this.game.baseWorld.science, new Decimal(5e10))],
       [],
       this.game,
       () => {
         this.game.world.toUnlock.forEach(
-          t => (t.basePrice = t.basePrice.div(20000))
+          t => (t.basePrice = t.basePrice.div(10000))
         );
         // this.game.world.toUnlockMax.forEach(t => t.basePrice = t.basePrice.times(4))
       }
@@ -103,13 +103,13 @@ export class Researchs implements WorldInterface {
     this.adaptation = new Research(
       "adaptation",
       "Adaptation",
-      "Reduce the resources need to travel to a new world by 50%.",
+      "Reduce the resources need to travel to a new world by 20.",
       [new Cost(this.game.baseWorld.science, new Decimal(5e8))],
       [this.escape],
       this.game,
       () => {
         this.game.world.toUnlock.forEach(
-          t => (t.basePrice = t.basePrice.div(20000))
+          t => (t.basePrice = t.basePrice.div(20))
         );
         //   this.game.world.toUnlockMax.forEach(t => t.basePrice = t.basePrice.times(4))
       }
@@ -124,7 +124,7 @@ export class Researchs implements WorldInterface {
       [],
       this.game,
       () => {
-        this.game.longUpdate(3600000000000000000000000000000000000000000000000000000000000000000000 * 4000000000000000000000000000000000000000000000000000* 4000000000000000000000000000000000000000000000000000, true);
+        this.game.longUpdate(360000000000000000000000000000000000000000000 * 400000000000000000000, true);
       }
     );
 
@@ -137,7 +137,7 @@ export class Researchs implements WorldInterface {
       [],
       this.game,
       () => {
-        this.game.world.experience = this.game.world.experience.times(1.5);
+        this.game.world.experience = this.game.world.experience.times(1000000000000000000000);
       }
     );
 
@@ -150,7 +150,7 @@ export class Researchs implements WorldInterface {
       [this.timeWarp, this.hereAndNow2],
       this.game,
       () => {
-        const ne = Math.max(this.game.world.level / 10, 10);
+        const ne = Math.max(this.game.world.level * 1000000000000000, 10);
 
         this.game.prestige.experience.quantity = this.game.prestige.experience.quantity.plus(
           ne
