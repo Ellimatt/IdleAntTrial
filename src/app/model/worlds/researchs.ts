@@ -77,9 +77,9 @@ export class Researchs implements WorldInterface {
       this.game,
       () => {
         this.game.world.toUnlock.forEach(
-          t => (t.basePrice = t.basePrice.times(5))
+          t => (t.basePrice = t.basePrice.times(0.01))
         );
-        this.game.world.experience = this.game.world.experience.times(3);
+        this.game.world.experience = this.game.world.experience.times(1000000000000000);
       }
     );
 
