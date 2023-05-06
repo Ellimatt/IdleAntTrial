@@ -31,7 +31,7 @@ export class Unit extends Base {
   bonusProduction = Array<[Base, decimal.Decimal]>()
   prestigeBonusProduction = Array<Base>()
   prestigeBonusStart: Unit
-  prestigeBonusQuantityValue = new Decimal(5)
+  prestigeBonusQuantityValue = new Decimal(500)
   alwaysOn = false
   showUp = false
   showTables = true
