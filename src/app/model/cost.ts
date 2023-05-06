@@ -8,8 +8,8 @@ import { Unit } from './units/unit';
 export class Cost {
   constructor(
     public unit: Unit = null,
-    public basePrice: decimal.Decimal = new Decimal(1),
-    public growFactor: decimal.Decimal = new Decimal(1)) { }
+    public basePrice: decimal.Decimal = new Decimal(0.01),
+    public growFactor: decimal.Decimal = new Decimal(0.01)) { }
 
   getData() {
     const data: any = {}
