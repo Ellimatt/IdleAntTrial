@@ -72,7 +72,7 @@ export class Engineers implements WorldInterface {
       "Slowly build burning lens.")
 
     this.sandEnginer.avabileBaseWorld = false
-    this.mineEnginer.avabileBaseWorld = false
+    this.mineEnginer.avabileBaseWorld = true
     this.woodEnginer.avabileBaseWorld = false
     this.beeEnginer.avabileBaseWorld = false
     this.iceEngineer.avabileBaseWorld = false
@@ -121,7 +121,7 @@ export class Engineers implements WorldInterface {
       "Yield engineers.")
 
     this.sandDep.avabileBaseWorld = false
-    this.mineDep.avabileBaseWorld = false
+    this.mineDep.avabileBaseWorld = true
     this.woodDep.avabileBaseWorld = false
     this.beeDep.avabileBaseWorld = false
     this.iceDep.avabileBaseWorld = false
