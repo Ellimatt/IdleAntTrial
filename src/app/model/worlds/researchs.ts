@@ -119,7 +119,7 @@ export class Researchs implements WorldInterface {
     this.timeWarp = new Research(
       "timeWarp",
       "Time warp",
-      "4 hour of update.",
+      "Lot's hour of update.",
       [new Cost(this.game.baseWorld.science, new Decimal(1))],
       [],
       this.game,
@@ -132,12 +132,12 @@ export class Researchs implements WorldInterface {
     this.hereAndNow2 = new Research(
       "han2Res",
       "Over and Beyond",
-      "Get 50% more experience when travel.",
+      "Get LOT more experience when travel.",
       [new Cost(this.game.baseWorld.science, new Decimal(1e12))],
       [],
       this.game,
       () => {
-        this.game.world.experience = this.game.world.experience.times(1000000000000000000000);
+        this.game.world.experience = this.game.world.experience.times(100000000000);
       }
     );
 
