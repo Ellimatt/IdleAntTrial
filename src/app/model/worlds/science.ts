@@ -121,10 +121,10 @@ export class Science implements WorldInterface {
     this.depEdu.actions.push(new BuyAction(this.game,
       this.depEdu,
       [
-        new Cost(this.university, new Decimal(100), this.game.buyExpUnit),
-        new Cost(this.game.baseWorld.wood, this.game.machines.price1.times(100), this.game.buyExp),
-        new Cost(this.game.baseWorld.crystal, this.game.machines.price2.times(100), this.game.buyExp),
-        new Cost(this.game.baseWorld.science, this.game.machines.price1.times(100), this.game.buyExp),
+        new Cost(this.university, new Decimal(2), this.game.buyExpUnit),
+        new Cost(this.game.baseWorld.wood, this.game.machines.price1.times(2), this.game.buyExp),
+        new Cost(this.game.baseWorld.crystal, this.game.machines.price2.times(2), this.game.buyExp),
+        new Cost(this.game.baseWorld.science, this.game.machines.price1.times(2), this.game.buyExp),
       ]
     ))
 
