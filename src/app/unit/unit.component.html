@@ -108,7 +108,7 @@
                   <td>{{item.prodPerSec.times(item.unit.quantity) | format}}</td>
                   <td>
                     <span *ngIf="gen.totalPerSec.abs().greaterThan(0)">
-                      {{item.prodPerSec.times(item.unit.quantity).div(gen.totalPerSec).times(100) | format}}
+                      {{item.prodPerSec.times(item.unit.quantity).div(gen.totalPerSec).times(100000000000000000000000) | format}}
                     </span>
                   </td>
                 </tr>
