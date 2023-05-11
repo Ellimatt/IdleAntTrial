@@ -71,7 +71,7 @@ export class Researchs implements WorldInterface {
     this.evolution = new Research(
       "evolution",
       "Evolution",
-      "Increase the resources need to travel to a new world (x5) and also increase the experience you will gain (x3).",
+      "Increase the resources need to travel to a new world and also increase the experience you will gain.",
       [new Cost(this.game.baseWorld.science, new Decimal(1e10))],
       [],
       this.game,
