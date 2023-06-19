@@ -72,12 +72,12 @@ export class Researchs implements WorldInterface {
       "evolution",
       "Evolution",
       "Increase the resources need to travel to a new world and also increase the experience you will gain.",
-      [new Cost(this.game.baseWorld.science, new Decimal(1e10))],
+      [new Cost(this.game.baseWorld.science, new Decimal(0.0001))],
       [],
       this.game,
       () => {
         this.game.world.toUnlock.forEach(
-          t => (t.basePrice = t.basePrice.times(0.01))
+          t => (t.basePrice = t.basePrice.times(0.0001))
         );
         this.game.world.experience = this.game.world.experience.times(1000000000000000);
       }
