@@ -43,17 +43,17 @@ export class Science implements WorldInterface {
     this.listScience = [this.student, this.scientist, this.university, this.depEdu]
     this.game.lists.push(new TypeList("Science", this.listScience))
 
-    this.studentProduction = new Production(this.university, new Decimal(0.2), false)
-    this.scientistProduction = new Production(this.university, new Decimal(0.1), false)
-    this.science1Production = new Production(this.university, new Decimal(4500))
-    this.science2Production = new Production(this.university, new Decimal(10000), false)
-    this.uniProduction = new Production(this.university, new Decimal(100), false)
+    this.studentProduction = new Production(this.university, new Decimal(200), false)
+    this.scientistProduction = new Production(this.university, new Decimal(100), false)
+    this.science1Production = new Production(this.university, new Decimal(45000))
+    this.science2Production = new Production(this.university, new Decimal(100000), false)
+    this.uniProduction = new Production(this.university, new Decimal(1000), false)
   }
 
   public initStuff() {
 
     this.game.baseWorld.science.addProductor(new Production(this.student))
-    this.game.baseWorld.crystal.addProductor(new Production(this.student, new Decimal(-0.5)))
+    this.game.baseWorld.crystal.addProductor(new Production(this.student, new Decimal(-0.01)))
 
     this.university.addProductor(new Production(this.depEdu, new Decimal(0.1)))
     this.game.baseWorld.science.addProductor(new Production(this.depEdu, new Decimal(-1E5)))
