@@ -45,9 +45,9 @@ export class Science implements WorldInterface {
 
     this.studentProduction = new Production(this.university, new Decimal(0.2), false)
     this.scientistProduction = new Production(this.university, new Decimal(0.1), false)
-    this.science1Production = new Production(this.university, new Decimal(450))
-    this.science2Production = new Production(this.university, new Decimal(1000), false)
-    this.uniProduction = new Production(this.university, new Decimal(0.1), false)
+    this.science1Production = new Production(this.university, new Decimal(4500))
+    this.science2Production = new Production(this.university, new Decimal(10000), false)
+    this.uniProduction = new Production(this.university, new Decimal(100), false)
   }
 
   public initStuff() {
