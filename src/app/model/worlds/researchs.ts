@@ -85,8 +85,8 @@ export class Researchs implements WorldInterface {
 
     //    Escape
     this.escape = new Research(
-      "escapism",
-      "Escapism",
+      "escapsm",
+      "Escapsm",
       "Reduce the resources need to travel to a new world by 10000.",
       [new Cost(this.game.baseWorld.science, new Decimal(5e10))],
       [],
@@ -124,7 +124,7 @@ export class Researchs implements WorldInterface {
       [],
       this.game,
       () => {
-        this.game.longUpdate(360000000000000000000000000000000000000000000 * 400000000000000000000, true);
+        this.game.longUpdate(36000000000000000, true);
       }
     );
 
